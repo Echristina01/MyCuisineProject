@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:theme="@android:style/Theme.Light"
+    android:layout_margin="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/recipePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:background="@color/colorPrimary"
+            app:srcCompat="@android:drawable/ic_menu_myplaces"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/recipeTitle"
+            android:layout_below="@id/recipePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:text="Makan dengan nama yang sangat panjang sekali">
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
